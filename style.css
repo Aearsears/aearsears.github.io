@@ -93,6 +93,11 @@ a {
     padding-left: 10px;
 }
 
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
 /* media queres */
 @media (max-width: 780px) {
     .grid-2 {
