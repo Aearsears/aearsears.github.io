@@ -266,6 +266,100 @@ li:hover {
     border-color: var(--accent);
 }
 
+/* Project cards */
+.project-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    display: block;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    background: rgba(99, 102, 241, 0.05);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card .project-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.project-card h3 {
+    color: var(--text-primary);
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    border: none;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.project-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section intro text */
+.section-intro {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* List item titles (bold) */
+li strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-card);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Selection color */
+::selection {
+    background: var(--accent);
+    color: white;
+}
+
 /* media queries */
 @media (max-width: 780px) {
     .grid-2 {
@@ -292,6 +386,10 @@ li:hover {
     li {
         font-size: 0.9rem;
         padding: 0.5rem 0.7rem;
+    }
+
+    .project-card {
+        padding: 1.25rem;
     }
 }
 
