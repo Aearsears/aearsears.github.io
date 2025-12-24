@@ -487,6 +487,7 @@ li:hover {
 .site-footer p {
     color: var(--text-muted);
     font-size: 0.85rem;
+    text-align: center;
 }
 
 /* Back to Top Button */
