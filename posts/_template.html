@@ -1,0 +1,90 @@
+<!-- 
+    POST TEMPLATE
+    Copy this file and rename it for each new post.
+    Example: my-new-post.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Update the description for each post -->
+    <meta name="description" content="POST_DESCRIPTION_HERE" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="POST_TITLE_HERE | Aearsears" />
+    <meta property="og:description" content="POST_DESCRIPTION_HERE" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Update the title for each post -->
+    <title>POST_TITLE_HERE | Aearsears</title>
+    <link rel="shortcut icon" type="image/jpg" href="../favicon-32x32.png" />
+</head>
+
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+            <h2>Writings</h2>
+            <p>Thoughts, reflections, and musings</p>
+        </div>
+        <div class="section-2">
+            <a href="../writings.html" class="back-link">← Back to Writings</a>
+
+            <article class="post-content">
+                <!-- Update the date -->
+                <span class="post-date">Month Day, Year</span>
+                <!-- Update the title -->
+                <h1 class="post-title">POST_TITLE_HERE</h1>
+                
+                <!-- Your content goes here -->
+                <p>
+                    Your post content...
+                </p>
+
+                <p>
+                    More paragraphs...
+                </p>
+
+                <!-- You can use lists -->
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+
+                <!-- You can use h2 and h3 for sections -->
+                <h2>Section Heading</h2>
+                <p>
+                    Section content...
+                </p>
+
+            </article>
+
+            <footer class="site-footer">
+                <p>© 2025 Aearsears. Built with ☕ and curiosity.</p>
+            </footer>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>

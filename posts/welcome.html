@@ -1,0 +1,86 @@
+<!-- Credit to https://github.com/giotsere/minimalist-portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Welcome to my writings - an introduction to my blog." />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Welcome to my writings | Aearsears" />
+    <meta property="og:description" content="Welcome to my writings - an introduction to my blog." />
+
+    <link rel="stylesheet" href="../style.css" />
+    <title>Welcome to my writings | Aearsears</title>
+    <link rel="shortcut icon" type="image/jpg" href="../favicon-32x32.png" />
+</head>
+
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+            <h2>Writings</h2>
+            <p>Thoughts, reflections, and musings</p>
+        </div>
+        <div class="section-2">
+            <a href="../writings.html" class="back-link">← Back to Writings</a>
+
+            <article class="post-content">
+                <span class="post-date">December 24, 2025</span>
+                <h1 class="post-title">Welcome to my writings</h1>
+                
+                <p>
+                    This is where I'll share my thoughts on software engineering, life lessons, 
+                    books I'm reading, and anything else that crosses my mind.
+                </p>
+
+                <p>
+                    I've always believed that writing is one of the best ways to clarify your thinking. 
+                    By putting thoughts into words, you're forced to organize them in a coherent way. 
+                    Sometimes you discover that what you thought you understood, you didn't really understand at all.
+                </p>
+
+                <p>
+                    Topics you might find here:
+                </p>
+
+                <ul>
+                    <li>Software engineering lessons and experiences</li>
+                    <li>Book reviews and reflections</li>
+                    <li>Life observations and philosophy</li>
+                    <li>Learning journeys and side projects</li>
+                </ul>
+
+                <p>
+                    Stay tuned for more!
+                </p>
+            </article>
+
+            <footer class="site-footer">
+                <p>© 2025 Aearsears. Built with ☕ and curiosity.</p>
+            </footer>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
