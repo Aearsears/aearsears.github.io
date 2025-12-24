@@ -30,6 +30,27 @@ html {
     min-height: 100vh;
 }
 
+/* Single column layout */
+.single-column {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+}
+
+.single-column h2:first-of-type {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.single-column .section-intro {
+    margin-bottom: 2.5rem;
+}
+
 body {
     margin: 0;
     padding: 0;
