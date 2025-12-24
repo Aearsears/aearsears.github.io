@@ -1,0 +1,81 @@
+<!-- Credit to https://github.com/giotsere/minimalist-portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description"
+        content="Thoughts, reflections, and writings on software, life, and everything in between." />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Writings | Aearsears" />
+    <meta property="og:description"
+        content="Thoughts, reflections, and writings on software, life, and everything in between." />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Writings | Aearsears</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon-32x32.png" />
+</head>
+
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+            <h2>Writings</h2>
+            <p>Thoughts, reflections, and musings</p>
+        </div>
+        <div class="section-2">
+            <a href="./index.html" class="back-link">← Back to Home</a>
+
+            <h2>Posts</h2>
+            
+            <!-- Add new posts here - newest first -->
+            <article class="post-card">
+                <span class="post-date">December 24, 2025</span>
+                <h3 class="post-title">Welcome to my writings</h3>
+                <p class="post-excerpt">
+                    This is where I'll share my thoughts on software engineering, life lessons, 
+                    books I'm reading, and anything else that crosses my mind. Stay tuned for more!
+                </p>
+                <a href="#" class="read-more">Read more →</a>
+            </article>
+
+            <!-- Template for new posts:
+            <article class="post-card">
+                <span class="post-date">Month Day, Year</span>
+                <h3 class="post-title">Post Title</h3>
+                <p class="post-excerpt">
+                    Brief excerpt or summary of the post...
+                </p>
+                <a href="posts/your-post.html" class="read-more">Read more →</a>
+            </article>
+            -->
+
+            <footer class="site-footer">
+                <p>© 2025 Aearsears. Built with ☕ and curiosity.</p>
+            </footer>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
