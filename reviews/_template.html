@@ -1,0 +1,94 @@
+<!-- 
+    GAME REVIEW TEMPLATE
+    
+    To create a new review:
+    1. Copy this file and rename it to your-game-name.html
+    2. Replace all placeholder content below
+    3. Add an entry in games.html linking to this review
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Review of [GAME TITLE] - [Brief description]" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="[GAME TITLE] Review | Aearsears" />
+    <meta property="og:description" content="Review of [GAME TITLE] - [Brief description]" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <title>[GAME TITLE] Review | Aearsears</title>
+    <link rel="shortcut icon" type="image/jpg" href="../favicon-32x32.png" />
+</head>
+
+<body>
+    <div class="single-column">
+        <a href="../games.html" class="back-link">← Back to Games</a>
+
+        <article class="post-content">
+            <span class="post-date">[Month Day, Year]</span>
+            <h1 class="post-title">[GAME TITLE]</h1>
+
+            <div class="game-meta">
+                <span class="review-rating-large">⭐ [X]/10</span>
+                <span class="game-platform-tag">[Platform]</span>
+                <span class="game-hours">[XX] hours played</span>
+            </div>
+
+            <h2>Overview</h2>
+            <p>
+                [Write your overview here. What is this game about? What genre is it?]
+            </p>
+
+            <h2>What I Loved</h2>
+            <ul>
+                <li>[Point 1]</li>
+                <li>[Point 2]</li>
+                <li>[Point 3]</li>
+            </ul>
+
+            <h2>What Could Be Better</h2>
+            <ul>
+                <li>[Point 1]</li>
+                <li>[Point 2]</li>
+            </ul>
+
+            <h2>Final Thoughts</h2>
+            <p>
+                [Your concluding thoughts. Would you recommend it? Who would enjoy this game?]
+            </p>
+
+            <blockquote>
+                [A memorable quote or moment from the game]
+            </blockquote>
+        </article>
+
+        <footer class="site-footer">
+            <p>© 2025 Aearsears. Built with ☕ and curiosity.</p>
+        </footer>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>

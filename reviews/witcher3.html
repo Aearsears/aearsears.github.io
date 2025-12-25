@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Review of The Witcher 3: Wild Hunt - An entire game inside a game." />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Witcher 3 Review | Aearsears" />
+    <meta property="og:description" content="Review of The Witcher 3: Wild Hunt - An entire game inside a game." />
+
+    <link rel="stylesheet" href="../style.css" />
+    <title>The Witcher 3 Review | Aearsears</title>
+    <link rel="shortcut icon" type="image/jpg" href="../favicon-32x32.png" />
+</head>
+
+<body>
+    <div class="single-column">
+        <a href="../games.html" class="back-link">← Back to Games</a>
+
+        <article class="post-content">
+            <span class="post-date">December 24, 2025</span>
+            <h1 class="post-title">The Witcher 3: Wild Hunt</h1>
+
+            <div class="game-meta">
+                <span class="review-rating-large">⭐ 10/10</span>
+                <span class="game-platform-tag">PC</span>
+                <span class="game-hours">200+ hours played</span>
+            </div>
+
+            <h2>Overview</h2>
+            <p>
+                The Witcher 3: Wild Hunt is CD Projekt Red's magnum opus - an open-world action RPG
+                that sets the gold standard for storytelling in video games. You play as Geralt of Rivia,
+                a monster hunter searching for his adoptive daughter Ciri while navigating a war-torn world.
+            </p>
+
+            <h2>What I Loved</h2>
+            <ul>
+                <li>The storytelling is unmatched - every side quest feels like it could be its own game</li>
+                <li>Hearts of Stone and Blood and Wine DLCs are masterpieces in their own right</li>
+                <li>The world feels alive with consequences to your choices</li>
+                <li>Gwent. Just Gwent.</li>
+                <li>The soundtrack perfectly captures every moment</li>
+            </ul>
+
+            <h2>What Could Be Better</h2>
+            <ul>
+                <li>Combat can feel repetitive at times</li>
+                <li>Inventory management is a bit clunky</li>
+            </ul>
+
+            <h2>Final Thoughts</h2>
+            <p>
+                This game ruined other RPGs for me. The depth of the world, the complexity of characters,
+                and the weight of your decisions create an experience that stays with you long after
+                the credits roll. If you haven't played it, you owe it to yourself.
+            </p>
+
+            <blockquote>
+                "Evil is evil. Lesser, greater, middling... makes no difference.
+                The degree is arbitrary, the definitions blurred."
+            </blockquote>
+        </article>
+
+        <footer class="site-footer">
+            <p>© 2025 Aearsears. Built with ☕ and curiosity.</p>
+        </footer>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
